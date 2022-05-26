@@ -1,91 +1,50 @@
-# Fleetbase Multi-Carrier PHP SDK
+# Omniship Common
 
-[![Source Code][badge-source]][source]
-[![Latest Version][badge-release]][packagist]
-[![Software License][badge-license]][license]
-[![PHP Version][badge-php]][php]
-[![Build Status][badge-build]][build]
-[![Coverage Status][badge-coverage]][coverage]
-[![Total Downloads][badge-downloads]][downloads]
+**Core components for the Omniship PHP shipping service provider library**
 
-Fleetbase Multi-Carrier PHP SDK
+[![PHPUnit tests](https://github.com/fleetbase/omniship-common/actions/workflows/phpunit.yml/badge.svg)](https://github.com/fleetbase/omniship
+-common/actions/workflows/phpunit.yml)
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Total Downloads][ico-downloads]][link-downloads]
 
-This project adheres to a [Contributor Code of Conduct][conduct]. By
-participating in this project and its community, you are expected to uphold this
-code.
-
-
-## Requirements
-
-PHP 7.4 and later.
-
-
-## Installation
-
-The preferred method of installation is via [Composer][]. Run the following
-command to install the package and add it as a requirement to your project's
-`composer.json`:
-
-```bash
-composer require fleetbase/omniship-php
-```
-
-
-## Quick Start
-
-Simple usage looks like:
-
-```php
-use Fleetbase\Omniship;
-
-$carrier = Omniship::create('FedEx');
-$carrier->setCredentials([]);
-
-$serviceQuotes = $carrier->getQuote([]);
-$order = $serviceQuotes->first()->purchase();
-
-if ($order->isSuccessful()) {
-    // Order was successful
-} else {
-    // Order failed
-}
-```
+[Omniship](https://github.com/fleetbase/omniship) is a framework agnostic, multi-carrier shipping 
+service provider library for PHP. This package implements common classes required by Omniship.
 
 ## Documentation
 
-Check out the [documentation website][documentation] for detailed information
-and code examples.
+Please see [https://omniship.fleetbase.io/](https://omniship.fleetbase.io/) for the installation & usage documentation.
 
+## Change log
 
-## Contributing
+Please see [UPGRADE](UPGRADE.md) for more information on how to upgrade to the latest version.
 
-Contributions are welcome! Please read [CONTRIBUTING][] for details.
+## Support
 
+If you are having general issues with Omniship, we suggest posting on
+[Stack Overflow](http://stackoverflow.com/). Be sure to add the
+[omniship tag](http://stackoverflow.com/questions/tagged/omniship) so it can be easily found.
 
-## Copyright and License
+If you want to keep up to date with release anouncements, discuss ideas for the project,
+or ask more detailed questions, there is also a [discord group](https://discord.com/invite/fjP4sReEvH) which
+you can join.
 
-The fleetbase/omniship-php library is copyright © [Fleetbase Pte Ltd.](https://fleetbase.io)
-and licensed for use under the MIT License (MIT). Please see [LICENSE][] for
-more information.
+If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/fleetbase/omniship-common/issues),
+or better yet, fork the library and submit a pull request.
 
+## Security
 
-[conduct]: https://github.com/fleetbase/omniship-php/blob/master/.github/CODE_OF_CONDUCT.md
-[composer]: http://getcomposer.org/
-[documentation]: https://fleetbase.github.io/omniship-php/
-[contributing]: https://github.com/fleetbase/omniship-php/blob/master/.github/CONTRIBUTING.md
+If you discover any security related issues, please email ron@fleetbase.io instead of using the issue tracker.
 
-[badge-source]: http://img.shields.io/badge/source-fleetbase/fleetbase--php-blue.svg?style=flat-square
-[badge-release]: https://img.shields.io/packagist/v/fleetbase/omniship-php.svg?style=flat-square&label=release
-[badge-license]: https://img.shields.io/packagist/l/fleetbase/omniship-php.svg?style=flat-square
-[badge-php]: https://img.shields.io/packagist/php-v/fleetbase/omniship-php.svg?style=flat-square
-[badge-build]: https://img.shields.io/travis/fleetbase/omniship-php/master.svg?style=flat-square
-[badge-coverage]: https://img.shields.io/coveralls/github/fleetbase/omniship-php/master.svg?style=flat-square
-[badge-downloads]: https://img.shields.io/packagist/dt/fleetbase/omniship-php.svg?style=flat-square&colorB=mediumvioletred
+## License
 
-[source]: https://github.com/fleetbase/omniship-php
-[packagist]: https://packagist.org/packages/fleetbase/omniship-php
-[license]: https://github.com/fleetbase/omniship-php/blob/master/LICENSE
-[php]: https://php.net
-[build]: https://travis-ci.org/fleetbase/omniship-php
-[coverage]: https://coveralls.io/r/fleetbase/omniship-php?branch=master
-[downloads]: https://packagist.org/packages/fleetbase/omniship-php
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/omniship/common.svg?style=flat
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat
+[ico-build]: https://img.shields.io/travis/thephpleague/omniship-common/master.svg?style=flat
+[ico-downloads]: https://img.shields.io/packagist/dt/omniship/common.svg?style=flat
+[link-packagist]: https://packagist.org/packages/omniship/common
+[link-travis]: https://travis-ci.org/thephpleague/omniship-common
+[link-downloads]: https://packagist.org/packages/omniship/common
+[link-contributors]: ../../contributors
