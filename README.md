@@ -2,8 +2,6 @@
 
 **Core components for the Omniship PHP shipping service provider library**
 
-[![PHPUnit tests](https://github.com/fleetbase/omniship-common/actions/workflows/phpunit.yml/badge.svg)](https://github.com/fleetbase/omniship
--common/actions/workflows/phpunit.yml)
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
