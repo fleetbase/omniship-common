@@ -8,7 +8,6 @@ namespace Omniship\Common;
 
 use Omniship\Common\Exception\RuntimeException;
 use Omniship\Common\Http\ClientInterface;
-use GuzzleHttp\Psr7\Request as HttpRequest;
 
 /**
  * Omniship Service Provider Factory class
@@ -22,9 +21,9 @@ use GuzzleHttp\Psr7\Request as HttpRequest;
  * Example:
  *
  * <code>
- *   // Create a provider for the Fedex Service
- *   // (routes to ProviderFactory::create)
- *   $provider = Omniship::create('Fedex');
+ *   // Create a service provider for the Fedex Service
+ *   // (routes to ServiceProviderFactory::create)
+ *   $provider = Omniship::create('FedEx');
  * </code>
  *
  */
@@ -60,7 +59,7 @@ class ServiceProviderFactory
     /**
      * Register a new provider
      *
-     * @param string $className Gateway name
+     * @param string $className Service Provider name
      */
     public function register($className)
     {
@@ -72,20 +71,19 @@ class ServiceProviderFactory
     /**
      * Create a new provider instance
      *
-     * @param string               $class       Gateway name
+     * @param string               $class       Service Provider name
      * @param ClientInterface|null $httpClient  A HTTP Client implementation
-     * @param HttpRequest|null     $httpRequest A Symfony HTTP Request implementation
      * @throws RuntimeException                 If no such provider is found
-     * @return GatewayInterface                 An object of class $class is created and returned
+     * @return Service ProviderInterface        An object of class $class is created and returned
      */
-    public function create($class, ClientInterface $httpClient = null, HttpRequest $httpRequest = null)
+    public function create($class, ClientInterface $httpClient = null)
     {
-        $class = Resolver::getClassName($class);
+        $class = Resolver::resolveServiceProviderClassName($class);
 
         if (!class_exists($class)) {
             throw new RuntimeException("Class '$class' not found");
         }
 
-        return new $class($httpClient, $httpRequest);
+        return new $class($httpClient);
     }
 }
