@@ -27,7 +27,7 @@ command to install the package and add it as a requirement to your project's
 `composer.json`:
 
 ```bash
-composer require fleetbase/multicarrier-php
+composer require fleetbase/omniship-php
 ```
 
 
@@ -36,9 +36,9 @@ composer require fleetbase/multicarrier-php
 Simple usage looks like:
 
 ```php
-use Fleetbase\MultiCarrier;
+use Fleetbase\Omniship;
 
-$carrier = MultiCarrier::create('FedEx');
+$carrier = Omniship::create('FedEx');
 $carrier->setCredentials([]);
 
 $serviceQuotes = $carrier->getQuote([]);
@@ -64,28 +64,28 @@ Contributions are welcome! Please read [CONTRIBUTING][] for details.
 
 ## Copyright and License
 
-The fleetbase/multicarrier-php library is copyright © [Fleetbase Pte Ltd.](https://fleetbase.io)
+The fleetbase/omniship-php library is copyright © [Fleetbase Pte Ltd.](https://fleetbase.io)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for
 more information.
 
 
-[conduct]: https://github.com/fleetbase/multicarrier-php/blob/master/.github/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/fleetbase/omniship-php/blob/master/.github/CODE_OF_CONDUCT.md
 [composer]: http://getcomposer.org/
-[documentation]: https://fleetbase.github.io/multicarrier-php/
-[contributing]: https://github.com/fleetbase/multicarrier-php/blob/master/.github/CONTRIBUTING.md
+[documentation]: https://fleetbase.github.io/omniship-php/
+[contributing]: https://github.com/fleetbase/omniship-php/blob/master/.github/CONTRIBUTING.md
 
 [badge-source]: http://img.shields.io/badge/source-fleetbase/fleetbase--php-blue.svg?style=flat-square
-[badge-release]: https://img.shields.io/packagist/v/fleetbase/multicarrier-php.svg?style=flat-square&label=release
-[badge-license]: https://img.shields.io/packagist/l/fleetbase/multicarrier-php.svg?style=flat-square
-[badge-php]: https://img.shields.io/packagist/php-v/fleetbase/multicarrier-php.svg?style=flat-square
-[badge-build]: https://img.shields.io/travis/fleetbase/multicarrier-php/master.svg?style=flat-square
-[badge-coverage]: https://img.shields.io/coveralls/github/fleetbase/multicarrier-php/master.svg?style=flat-square
-[badge-downloads]: https://img.shields.io/packagist/dt/fleetbase/multicarrier-php.svg?style=flat-square&colorB=mediumvioletred
+[badge-release]: https://img.shields.io/packagist/v/fleetbase/omniship-php.svg?style=flat-square&label=release
+[badge-license]: https://img.shields.io/packagist/l/fleetbase/omniship-php.svg?style=flat-square
+[badge-php]: https://img.shields.io/packagist/php-v/fleetbase/omniship-php.svg?style=flat-square
+[badge-build]: https://img.shields.io/travis/fleetbase/omniship-php/master.svg?style=flat-square
+[badge-coverage]: https://img.shields.io/coveralls/github/fleetbase/omniship-php/master.svg?style=flat-square
+[badge-downloads]: https://img.shields.io/packagist/dt/fleetbase/omniship-php.svg?style=flat-square&colorB=mediumvioletred
 
-[source]: https://github.com/fleetbase/multicarrier-php
-[packagist]: https://packagist.org/packages/fleetbase/multicarrier-php
-[license]: https://github.com/fleetbase/multicarrier-php/blob/master/LICENSE
+[source]: https://github.com/fleetbase/omniship-php
+[packagist]: https://packagist.org/packages/fleetbase/omniship-php
+[license]: https://github.com/fleetbase/omniship-php/blob/master/LICENSE
 [php]: https://php.net
-[build]: https://travis-ci.org/fleetbase/multicarrier-php
-[coverage]: https://coveralls.io/r/fleetbase/multicarrier-php?branch=master
-[downloads]: https://packagist.org/packages/fleetbase/multicarrier-php
+[build]: https://travis-ci.org/fleetbase/omniship-php
+[coverage]: https://coveralls.io/r/fleetbase/omniship-php?branch=master
+[downloads]: https://packagist.org/packages/fleetbase/omniship-php

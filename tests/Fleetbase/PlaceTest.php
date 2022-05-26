@@ -2,11 +2,11 @@
 
 // declare(strict_types=1);
 
-// namespace Fleetbase\MultiCarrier\Test\Fleetbase;
+// namespace Fleetbase\Omniship\Test\Fleetbase;
 
-// use Fleetbase\MultiCarrier\Fleetbase;
-// use Fleetbase\MultiCarrier\Resources\Place;
-// use Fleetbase\MultiCarrier\Test\TestCase;
+// use Fleetbase\Omniship\Fleetbase;
+// use Fleetbase\Omniship\Resources\Place;
+// use Fleetbase\Omniship\Test\TestCase;
 
 // final class PlaceTest extends TestCase
 // {

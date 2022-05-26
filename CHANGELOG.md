@@ -1,4 +1,4 @@
-# fleetbase/multicarrier-php Changelog
+# fleetbase/omniship-php Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -30,5 +30,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Feature C description
 
 
-[Unreleased]: https://github.com/fleetbase/multicarrier-php/compare/1.0.0...HEAD
-[1.0.0]: https://github.com/fleetbase/multicarrier-php/commits/1.0.0
+[Unreleased]: https://github.com/fleetbase/omniship-php/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/fleetbase/omniship-php/commits/1.0.0

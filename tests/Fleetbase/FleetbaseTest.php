@@ -2,10 +2,10 @@
 
 // declare(strict_types=1);
 
-// namespace Fleetbase\MultiCarrier\Test\Fleetbase;
+// namespace Fleetbase\Omniship\Test\Fleetbase;
 
-// use Fleetbase\MultiCarrier\Fleetbase;
-// use Fleetbase\MultiCarrier\Test\TestCase;
+// use Fleetbase\Omniship\Fleetbase;
+// use Fleetbase\Omniship\Test\TestCase;
 
 // final class FleetbaseTest extends TestCase
 // {

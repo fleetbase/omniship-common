@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fleetbase\MultiCarrier\Test;
+namespace Fleetbase\Omniship\Test;
 
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 use Dotenv\Dotenv;
